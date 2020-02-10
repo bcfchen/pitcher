@@ -1,0 +1,18 @@
+.card-chip {
+  span {
+    font-weight: 700;
+    font-size: 75%;
+    background: #f8f9fa;
+    border: 1px #dee2e6 solid;
+    padding: 0.25em 0.6em 0.25em 0.6em;
+    border-radius: 10rem;
+  }
+
+  svg {
+    height: 1em;
+    width: 1em;
+    top: 0.125em;
+    position: relative;
+    margin-right: 0.25em;
+  }
+}

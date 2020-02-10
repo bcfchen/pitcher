@@ -1,23 +1,21 @@
 import React from 'react'
-import Card from './Card'
+import CardChip from './CardChip'
 import { withKnobs, text } from '@storybook/addon-knobs'
 
 export default {
-  component: Card,
-  title: 'Card',
+  component: CardChip,
+  title: 'CardChip',
   excludeStories: /.*data$/,
   decorators: [withKnobs],
 };
 
 export const data = {
-  title: '',
-  category: ''
+  text: ''
 };
 
 export const Default = () => (
-  <Card
+  <CardChip
     {...data}
-    title={text('Title Text', 'My Title')}
-    category={text('Category Text', 'My Category')}
-  ></Card>
+    text={text('Card Chip Text', 'Productivity')}
+  ></CardChip>
 );
