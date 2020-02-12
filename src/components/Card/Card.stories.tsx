@@ -1,6 +1,7 @@
-import React from 'react'
-import Card from './Card'
-import { withKnobs, text } from '@storybook/addon-knobs'
+import React from 'react';
+import Card from './Card';
+
+import { withKnobs, text, number } from '@storybook/addon-knobs';
 
 export default {
   component: Card,
@@ -11,7 +12,11 @@ export default {
 
 export const data = {
   title: '',
-  category: ''
+  category: '',
+  imageUrl: '',
+  userName: '',
+  numberOfParticipants: 0,
+  submissionDate: ''
 };
 
 export const Default = () => (
@@ -19,5 +24,9 @@ export const Default = () => (
     {...data}
     title={text('Title Text', 'My Title')}
     category={text('Category Text', 'My Category')}
+    imageUrl={text('Image Url', '')}
+    userName={text('User Name', 'Some User Name')}
+    numberOfParticipants={number('Number of Participants', 0)}
+    submissionDate={text('Submission Date', '2019-10-10')}
   ></Card>
 );

@@ -1,9 +1,54 @@
+@import "../../../../variables.scss";
+
 .cardFooter {
   display: flex;
+  padding: 1.25rem;
+  align-items: center;
 
-  .userInfoContainer {
+  .userProfileContainer {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    .profileIconContainer {
+      margin-right: 0.5rem;
+      display: flex;
+      align-items: center;
+
+      .profileIcon {
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        border: 1px var(--gray-medium) solid;
+      }
+    }
+
+    .userInfoContainer {
+      display: flex;
+      flex-direction: column;
+
+      .monthsAgo {
+        color: var(--gray-lightest);
+      }
+    }
   }
 
   .participantsContainer {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: var(--gray-lightest);
+      display: flex;
+      align-items: center;
+
+      span {
+        padding-right: 0.25em;
+        svg {
+          height: 1em;
+          width: 1em;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,34 @@
+@import "../../variables.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  .cardBody {
+    text-align: center;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+
+    .imageContainer {
+      padding: 1.5rem;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: center;
+
+      span {
+        max-height: 200px;
+        max-width: 200px;
+
+        svg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .cardTitleContainer {
+      h2 {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}

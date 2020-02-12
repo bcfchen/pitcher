@@ -2,8 +2,8 @@
   span {
     font-weight: 700;
     font-size: 75%;
-    background: #f8f9fa;
-    border: 1px #dee2e6 solid;
+    background: var(--gray-light);
+    border: 1px var(--gray-medium) solid;
     padding: 0.25em 0.6em 0.25em 0.6em;
     border-radius: 10rem;
   }
