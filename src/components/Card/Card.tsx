@@ -23,11 +23,11 @@ const Card = ({title, category, imageUrl, userName, numberOfParticipants, submis
 
   return (<div className={styles.card}>
       <div className={styles.cardBody}>
-        <div className={styles.imageContainer}>
+        {imageUrl && <div className={styles.imageContainer}>
           <span className={styles.image}>
               <EmployeeProject/>
           </span>
-        </div>
+        </div>}
         <div className={styles.cardTitleContainer}>
           <h2>{title}</h2>
           <div>

@@ -1,0 +1,42 @@
+@import "../../variables.scss";
+
+.button {
+  border: 1px solid transparent;
+  padding: 0.4rem 1rem;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  vertical-align: middle;
+
+  .icon {
+    display: inline-flex;
+    align-self: center;
+
+    svg {
+      height: 1em;
+      width: 1em;
+    }
+  }
+
+  &.primary {
+    color: white;
+    background-color: var(--brand-primary);
+  }
+
+  &.secondary {
+    background-color: var(--brand-secondary);
+  }
+
+  &.success {
+    background-color: var(--brand-success);
+  }
+
+  &.warning {
+    background-color: var(--brand-warning);
+  }
+
+  &.light {
+    background-color: var(--brand-light);
+  }
+}
