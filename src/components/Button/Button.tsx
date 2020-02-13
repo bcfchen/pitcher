@@ -3,7 +3,7 @@ import styles from './Button.module.scss';
 
 export type ButtonProps = {
   label: string,
-  theme: 'primary' | 'secondary' | 'warning' | 'success' | 'light' | 'default',
+  theme: 'primary' | 'secondary' | 'warning' | 'success' | 'light',
   url: string,
   IconComponent?: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
 };

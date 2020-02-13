@@ -25,18 +25,23 @@
   }
 
   &.secondary {
+    color: white;
     background-color: var(--brand-secondary);
   }
 
   &.success {
+    color: white;
     background-color: var(--brand-success);
   }
 
   &.warning {
+    color: white;
     background-color: var(--brand-warning);
   }
 
   &.light {
+    color: rgba(0, 0, 0, 0.7);
     background-color: var(--brand-light);
+    border: 1px solid #dee2e6;
   }
 }

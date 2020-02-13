@@ -1,7 +1,8 @@
 import React from 'react';
 import Button from './Button';
 import {ReactComponent as PlusSignIcon } from '../../assets/icons/plus-sign.svg';
-import { withKnobs, text, number } from '@storybook/addon-knobs';
+import {ReactComponent as JoinIcon } from '../../assets/icons/join.svg';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 export default {
   component: Button,
@@ -17,18 +18,44 @@ export const data = {
   IconComponent: undefined
 };
 
-export const Default = () => (
+export const Light = () => (
   <Button
     {...data}
-    theme={'default'}
+    label={text('Button Label', "Join")}
+    theme={'light'}
+    IconComponent={JoinIcon}
   ></Button>
 );
 
 export const Primary = () => (
   <Button
     {...data}
+    label={text('Button Label', "Pitch")}
     theme={'primary'}
     IconComponent={PlusSignIcon}
   ></Button>
 );
 
+export const Secondary = () => (
+  <Button
+    {...data}
+    theme={'secondary'}
+    label={text('Button Label', "Pitch Now")}
+  ></Button>
+);
+
+export const Success = () => (
+  <Button
+    {...data}
+    theme={'success'}
+    label={text('Button Label', "Pitch Now")}
+  ></Button>
+);
+
+export const Warning = () => (
+  <Button
+    {...data}
+    theme={'warning'}
+    label={text('Button Label', "Pitch Now")}
+  ></Button>
+);
