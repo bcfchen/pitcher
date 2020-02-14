@@ -7,7 +7,7 @@ export type ChipProps = {
 };
 
 const Chip = ({text, link} : ChipProps) => (<>
-    <a className={styles.a} href={link}>
+    <a className={styles.chip} href={link}>
       {text}
     </a>
 </>)

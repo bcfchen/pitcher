@@ -1,21 +1,26 @@
 import React from 'react';
 import styles from './Header.module.scss';
+import Button from '../Button';
+import {ReactComponent as LogoIcon} from '../../assets/icons/logo.svg';
+import {ReactComponent as PlusSignIcon } from '../../assets/icons/plus-sign.svg';
+import {ReactComponent as JoinIcon } from '../../assets/icons/join.svg';
 
 export type HeaderProps = {
-  primaryBtnLabel: string,
+  headerLink: string,
   primaryBtnCallback: () => void,
-  secondaryBtnLabel: string,
-  secondaryBtnCallback: () => void,
-  title: string,
-  IconComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+  secondaryBtnCallback: () => void
 };
 
-const Header = ({primaryBtnLabel, primaryBtnCallback, secondaryBtnLabel, secondaryBtnCallback, title, IconComponent} : HeaderProps) => {
-  return (<header className={styles.header}>
+const Header = ({headerLink, primaryBtnCallback, secondaryBtnCallback} : HeaderProps) => {
+  return (<header className={styles.pitcherHeader}>
     <nav>
-      <a>
+      <a href={headerLink}>
+        <span className={styles.headerIcon}><LogoIcon/></span>
+        <span className={styles.headerLabel}>Pitchcard</span>
       </a>
-      <div>
+      <div className={styles.buttonContainer}>
+        <Button label='Pitch' url='' theme='primary' IconComponent={PlusSignIcon}/>
+        <Button label='Join' url='' theme='light' IconComponent={JoinIcon}/> 
       </div>
     </nav>
   </header>);

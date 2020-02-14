@@ -1,4 +1,44 @@
-.header {
+.pitcherHeader {
   position: sticky;
   top: 0;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+
+    a {
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+
+      .headerIcon {
+        svg {
+          vertical-align: middle;
+        }
+      }
+
+      .headerLabel {
+        color: var(--gray-dark);
+        font-weight: 700;
+        font-size: 1.25em;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .buttonContainer {
+      display: flex;
+      > :first-child {
+        margin-right: 0.2rem;
+      }
+
+      @media only screen and (min-width: 576px) {
+        > :first-child {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
 }

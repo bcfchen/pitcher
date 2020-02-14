@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import {ReactComponent as LogoIcon} from '../../assets/icons/logo.svg';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
 export default {
@@ -11,12 +10,9 @@ export default {
 };
 
 const data = {
-  primaryBtnLabel: 'Pitch',
+  headerLink: '',
   primaryBtnCallback: () => {},
-  secondaryBtnLabel: 'Join',
   secondaryBtnCallback: () => {},
-  title: 'Pitchcard',
-  IconComponent: LogoIcon
 };
 
 export const Default = () => (
