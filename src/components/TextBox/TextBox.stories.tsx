@@ -11,7 +11,7 @@ export default {
 
 const data = {
   placeholderText: '',
-  onSubmit: () => {},
+  onSubmit: () => alert('hi'),
 };
 
 export const Default = () => (
