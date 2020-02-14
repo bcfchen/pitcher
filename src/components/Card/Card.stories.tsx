@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-
+import {ReactComponent as EmployeeProject} from '../../assets/icons/employee-project.svg';
 import { withKnobs, text, number } from '@storybook/addon-knobs';
 
 export default {
@@ -16,7 +16,8 @@ export const data = {
   imageUrl: '',
   userName: '',
   numberOfParticipants: 0,
-  submissionDate: ''
+  submissionDate: '',
+  IconComponent: EmployeeProject
 };
 
 export const Default = () => (

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Card.module.scss';
-import {ReactComponent as EmployeeProject} from '../../assets/icons/employee-project.svg';
 import CardChip from './components/CardChip';
 import CardFooter from './components/CardFooter';
 
@@ -10,22 +9,23 @@ export type CardProps = {
   imageUrl: string,
   userName: string,
   numberOfParticipants: number,
-  submissionDate: string
+  submissionDate: string,
+  IconComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
 };
 
-const Card = ({title, category, imageUrl, userName, numberOfParticipants, submissionDate} : CardProps) =>  {
+const Card = ({imageUrl, title, category, userName, numberOfParticipants, submissionDate, IconComponent} : CardProps) =>  {
   const cardFooterProps = {
-    imageUrl,
     userName,
     numberOfParticipants,
-    submissionDate
+    submissionDate,
+    imageUrl
   };
 
   return (<div className={styles.card}>
       <div className={styles.cardBody}>
-        {imageUrl && <div className={styles.imageContainer}>
+        {IconComponent && <div className={styles.imageContainer}>
           <span className={styles.image}>
-              <EmployeeProject/>
+              <IconComponent/>
           </span>
         </div>}
         <div className={styles.cardTitleContainer}>
