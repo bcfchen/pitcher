@@ -1,0 +1,39 @@
+.textbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  max-width: 360px;
+  border: 1px solid var(--gray-medium);
+  padding: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+  input {
+    flex: 1 1 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-dark);
+    line-height: 1.5;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    padding: 0.4rem 0.5rem;
+    text-shadow: none;
+  }
+
+  .submitButtonContainer {
+    display: flex;
+
+    button {
+      background-color: var(--brand-primary);
+      border-radius: 50rem;
+      color: white;
+
+      span {
+        svg: {
+          width: 1.25em;
+          height: 1.25em;
+        }
+      }
+    }
+  }
+}
