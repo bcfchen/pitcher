@@ -11,4 +11,13 @@
   --brand-success: #4cd964;
   --brand-warning: #ff9500;
   --brand-light: #fff;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+
+  h6 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
 }
