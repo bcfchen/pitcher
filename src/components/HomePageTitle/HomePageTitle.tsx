@@ -28,8 +28,8 @@ const HomePageTitle = ({mainTextTop, mainTextBottom, subTextTop, subTextBottom, 
     <br/>
     {subTextBottom}
   </p>
-  <div><TextBox placeholderText={textBoxPlaceholder} onSubmit={onSubmit}/></div>
-  <a href='/cards'>
+  <div className={styles.textBoxContainer}><TextBox placeholderText={textBoxPlaceholder} onSubmit={onSubmit}/></div>
+  <a href='/cards' className={styles.linkContainer}>
     <span><ExploreIdeasIcon/></span>
     {linkText}
   </a>

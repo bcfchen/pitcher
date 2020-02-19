@@ -25,4 +25,35 @@
       }
     }
   }
+
+  p {
+    font-weight: var(--font-weight-light);
+  }
+
+  .textBoxContainer {
+    text-align: center;
+  }
+
+  .linkContainer {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--gray-lightest);
+
+    span {
+      display: inline-flex;
+      align-self: center;
+
+      svg {
+        height: 1em;
+        width: 1em;
+        top: 0.15em;
+        vertical-align: middle;
+        position: relative;
+      }
+    }
+  }
+
+  .linkContainer:hover {
+    text-decoration: underline;
+  }
 }

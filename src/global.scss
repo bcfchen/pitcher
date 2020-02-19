@@ -5,6 +5,17 @@ h4 {
   margin-top: 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 a {
   color: black;
   text-decoration-line: none;
@@ -12,4 +23,9 @@ a {
 
 body {
   line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
