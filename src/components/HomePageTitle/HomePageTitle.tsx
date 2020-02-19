@@ -19,8 +19,9 @@ const HomePageTitle = ({mainTextTop, mainTextBottom, subTextTop, subTextBottom, 
   <a href='/'><MainPageIcon/></a>
   <h1>
     {mainTextTop}
+    <br/>
     <span>{mainTextBottom}</span>
-    <span>|</span>
+    <span className={styles.cursorBlink}>|</span>
   </h1>
   <p>
     {subTextTop}

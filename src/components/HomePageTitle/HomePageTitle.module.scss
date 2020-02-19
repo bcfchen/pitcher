@@ -1,2 +1,28 @@
 .homePageTitle {
+  text-align: center;
+  max-width: 600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  h1 {
+    .cursorBlink {
+      opacity: 1;
+      animation: typedjsBlink 0.7s infinite;
+
+      @keyframes typedjsBlink {
+        50% {
+          opacity: 0;
+        }
+      }
+    }
+  }
 }
