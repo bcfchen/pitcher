@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 
 export default {
   component: Footer,
