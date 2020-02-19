@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './HowItWorksTable.module.scss';
+import {ReactComponent as RightArrowSmallIcon} from '../../assets/icons/right-arrow-small.svg';
 
 const HowItWorksCard = ({title, description, IconComponent}) => (
   <div className={styles.HowItWorksCard}>
@@ -24,6 +25,10 @@ const HowItWorksTable = ({tableItems} : HowItWorksProps) => {
 
   return (<div className={styles.howItWorksTable}>
     <div className={styles.tableColumn}>
+      <h2>How it works</h2>
+      <div>
+        <span><span><RightArrowSmallIcon/></span></span>
+      </div>
     </div>
     {tableColumns}
 </div>)};
